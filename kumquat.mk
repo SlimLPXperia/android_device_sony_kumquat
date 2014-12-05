@@ -32,7 +32,7 @@ PRODUCT_COPY_FILES += \
 # Device specific bootlogo, bootanimation and charging animation
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/prebuilt/logo-480x854.rle:root/logo.rle \
-	$(LOCAL_PATH)/prebuilt/bootanimation.zip:system/media/bootanimation.zip
+	$(LOCAL_PATH)/../../../vendor/slim/prebuilt/common/bootanimation/480.zip:system/media/bootanimation.zip
 $(call inherit-product, $(LOCAL_PATH)/prebuilt/resources-480x854.mk)
 
 # TWRP
@@ -60,7 +60,7 @@ PRODUCT_COPY_FILES += \
 # Reference: http://developer.android.com/guide/practices/screens_support.html
 # Note: In PRODUCT_AAPT_PREF_CONFIG set the proper one (e.g. hdpi), in PRODUCT_AAPT_CONFIG set the proper one and the previous one (e.g. mdpi)
 PRODUCT_AAPT_PREF_CONFIG := hdpi
-PRODUCT_AAPT_CONFIG := mdpi hdpi
+PRODUCT_AAPT_CONFIG := mdpi hdpi xhdpi xxhdpi
 
 
 # Android kind of memory
